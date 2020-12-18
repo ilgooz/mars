@@ -1,0 +1,9 @@
+syntax = "proto3";
+package ilgooz.mars.mars;
+
+option go_package = "github.com/ilgooz/mars/x/mars/types";
+
+// GenesisState defines the capability module's genesis state.
+message GenesisState {
+}
+
