@@ -1,0 +1,14 @@
+syntax = "proto3";
+package mars.mars;
+
+import "gogoproto/gogo.proto";
+import "mars/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "mars/x/mars/types";
+
+// GenesisState defines the mars module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
